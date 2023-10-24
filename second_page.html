@@ -73,5 +73,60 @@
         </nav>
         <a href="#contactForm" class="contact-btn">Свяжитесь с нами</a>
     </footer>
+    <!-- Модальное окно 1 -->
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal1')">&times;</span>
+        <h2>Приветственное предложение!</h2>
+        <p>Мы выдаем самокат абсолютно бесплатно всем новым курьерам!</p>
+        <button onclick="openModal('modal2')">Узнать условия</button>
+    </div>
+</div>
+
+<!-- Модальное окно 2 -->
+<div class="modal" id="modal2">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal2')">&times;</span>
+        <h2>Условия предложения</h2>
+        <ul>
+            <li>Условие 1</li>
+            <li>Условие 2</li>
+            <li>Условие 3</li>
+            <!-- Добавьте другие условия по мере необходимости -->
+        </ul>
+        <button onclick="openModal('modal3')">Оставить заявку</button>
+    </div>
+</div>
+
+<!-- Модальное окно 3 -->
+<div class="modal" id="modal3">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('modal3')">&times;</span>
+        <h2>Форма обратной связи</h2>
+        <form action="#" method="post">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Ваш Email:</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Ваше сообщение:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Отправить">
+</div>
+    
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = 'block';
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+    }
+
+    // Открываем первое модальное окно при загрузке страницы
+    window.onload = function() {
+        openModal('modal1');
+    };
+</script>
+
 </body>
 </html>
