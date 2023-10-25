@@ -6,78 +6,84 @@
     <title>Шапка и Преимущества</title>
     <style>
         /* Стили для шапки */
-        .header {
-            background-color: #F9E79F;
-            padding: 20px 0;
-            text-align: center;
+        body {
+            font-family: Arial, sans-serif;
         }
-
-        .header img {
-            width: 70%;
-        }
-
-        .nav {
+        
+        .header-container {
+            background-color: #F5B041;
             display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
+            align-items: center;
+            justify-content: center;
+            height: 250px;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-content img {
+            margin-right: 50px;
+        }
+
+        .header-content div {
+            color: white;
+            font-size: 24px;
         }
 
         /* Стили для преимуществ */
         .benefits {
-            font-family: Arial, sans-serif;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 20px;
-            border: 1px solid #e0e0e0;
-        }
-
-        .benefits h2 {
-            text-align: center;
+            padding: 30px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .benefit-item {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
+            gap: 10px;
         }
 
         .benefit-item img {
-            margin-right: 10px;
-            width: 50px;
+            width: 40px;
         }
 
         .benefit-item p {
             margin: 0;
+            font-size: 14px;
+            line-height: 1.4;
         }
+
     </style>
 </head>
 <body>
 
     <!-- Шапка -->
-    <div class="header">
-        <div class="nav">
-            <!-- Здесь могут быть ссылки или другие элементы навигации -->
-            <span>Города</span>
-            <span>Вопросы</span>
-            <span>Стать курьером</span>
-            <span>Принципы сотрудничества</span>
-            <span>Свяжитесь с нами</span>
+    <div class="header-container">
+        <div class="header-content">
+            <img src="your_image_path" alt="Logo">
+            <div>
+                Ищем того, кто хочет зарабатывать до 100000Р в месяц!
+                Быстрый выход на первую доставку и ежедневные выплаты.
+            </div>
         </div>
-        <img src="path_to_your_image/courier.png" alt="Курьер">
     </div>
 
     <!-- Преимущества -->
     <div class="benefits">
-        <h2>Это вам понравится</h2>
-
         <div class="benefit-item">
-            <img src="path_to_your_image/coin.png" alt="Доход">
-            <p>Доход до 100000Р в месяц!</p>
+            <img src="icon_path_1" alt="Преимущество 1">
+            <p>Быстрое подключение к сервису. Начните доставлять заказы уже на следующий день.</p>
         </div>
 
-        <!-- Добавьте другие элементы преимуществ здесь -->
-
+        <!-- Аналогично добавьте другие элементы преимуществ -->
+        
     </div>
 
 </body>
 </html>
+
