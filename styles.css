@@ -29,13 +29,13 @@ body {
     border-radius: 5px;
 }
 
-.scooters {
+.samokat {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.scooters img {
+.samokat img {
     width: 48%; /* 2 images per row, with a little gap */
     margin: 1%;
     border-radius: 10px;
