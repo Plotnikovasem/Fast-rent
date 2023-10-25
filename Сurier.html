@@ -1,89 +1,40 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шапка и Преимущества</title>
-    <style>
-        /* Стили для шапки */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        
-        .header-container {
-            background-color: #F5B041;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 250px;
-        }
+<!-- После блока .banner и перед закрывающим тегом </body> добавьте следующий код: -->
 
-        .header-content {
-            display: flex;
-            align-items: center;
-        }
+<div class="main-content">
+    <h2>Это вам понравится</h2>
 
-        .header-content img {
-            margin-right: 50px;
-        }
-
-        .header-content div {
-            color: white;
-            font-size: 24px;
-        }
-
-        /* Стили для преимуществ */
-        .benefits {
-            padding: 30px 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        .benefit-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .benefit-item img {
-            width: 40px;
-        }
-
-        .benefit-item p {
-            margin: 0;
-            font-size: 14px;
-            line-height: 1.4;
-        }
-
-    </style>
-</head>
-<body>
-
-    <!-- Шапка -->
-    <div class="header-container">
-        <div class="header-content">
-            <img src="your_image_path" alt="Logo">
-            <div>
-                Ищем того, кто хочет зарабатывать до 100000Р в месяц!
-                Быстрый выход на первую доставку и ежедневные выплаты.
-            </div>
-        </div>
-    </div>
-
-    <!-- Преимущества -->
-    <div class="benefits">
-        <div class="benefit-item">
-            <img src="icon_path_1" alt="Преимущество 1">
-            <p>Быстрое подключение к сервису. Начните доставлять заказы уже на следующий день.</p>
+    <div class="features">
+        <div class="feature-item">
+            <img src="path_to_your_dollar_image.png" alt="Доход до 100000 ₽ в месяц">
+            <p>Доход до 100000 ₽ в месяц</p>
         </div>
 
-        <!-- Аналогично добавьте другие элементы преимуществ -->
-        
-    </div>
+        <!-- Повторите структуру div.feature-item для остальных особенностей, меняя изображение и текст соответственно -->
 
-</body>
-</html>
+    </div>
+</div>
+
+<style>
+    .main-content {
+        padding: 40px 20px;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Три колонки */
+        gap: 20px; /* Расстояние между элементами */
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .feature-item img {
+        width: 40px; /* Размер изображения */
+        height: 40px;
+    }
+</style>
+
 
