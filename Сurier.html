@@ -3,91 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шапка сайта</title>
+    <title>Шапка и Преимущества</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
+        /* Стили для шапки */
         .header {
+            background-color: #F9E79F;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header img {
+            width: 70%;
+        }
+
+        .nav {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background-color: #FFF;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        .header .logo {
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        .header .menu {
-            display: flex;
-            gap: 20px;
-        }
-
-        .header .menu a {
-            text-decoration: none;
-            color: #000;
-            padding: 5px 10px;
-            border: 1px solid transparent;
-            transition: 0.3s;
-        }
-
-        .header .menu a:hover {
-            border-color: #000;
-        }
-
-        .banner {
-            position: relative;
-            height: 500px; 
-            background: url('path_to_your_image.jpg') no-repeat center center; 
-            background-size: cover;
-        }
-
-        .banner-content {
-            position: absolute;
-            top: 50%;
-            left: 10%;
-            transform: translateY(-50%);
-            color: #FFF;
-        }
-
-        .banner-content h1 {
-            font-size: 48px;
+            justify-content: space-around;
             margin-bottom: 20px;
         }
 
-        .button {
-            background-color: #FFD700;
-            padding: 15px 25px;
-            text-decoration: none;
-            color: #000;
-            display: inline-block;
-            font-weight: bold;
+        /* Стили для преимуществ */
+        .benefits {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .benefits h2 {
+            text-align: center;
+        }
+
+        .benefit-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .benefit-item img {
+            margin-right: 10px;
+            width: 50px;
+        }
+
+        .benefit-item p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
+
+    <!-- Шапка -->
     <div class="header">
-        <div class="logo">Яндекс Еда</div>
-        <div class="menu">
-            <a href="#">Города</a>
-            <a href="#">Вопросы</a>
-            <a href="#">Стать курьером</a>
-            <a href="#">Принципы сотрудничества</a>
-            <a href="#">Свяжитесь с нами</a>
+        <div class="nav">
+            <!-- Здесь могут быть ссылки или другие элементы навигации -->
+            <span>Города</span>
+            <span>Вопросы</span>
+            <span>Стать курьером</span>
+            <span>Принципы сотрудничества</span>
+            <span>Свяжитесь с нами</span>
         </div>
+        <img src="path_to_your_image/courier.png" alt="Курьер">
     </div>
 
-    <div class="banner">
-        <div class="banner-content">
-            <h1>Ищем того, кто хочет зарабатывать до 100000 ₽ в месяц</h1>
-            <p>Быстрый выход на первую доставку и ежедневные выплаты</p>
-            <a href="#" class="button">Стать курьером</a>
+    <!-- Преимущества -->
+    <div class="benefits">
+        <h2>Это вам понравится</h2>
+
+        <div class="benefit-item">
+            <img src="path_to_your_image/coin.png" alt="Доход">
+            <p>Доход до 100000Р в месяц!</p>
         </div>
+
+        <!-- Добавьте другие элементы преимуществ здесь -->
+
     </div>
+
 </body>
 </html>
