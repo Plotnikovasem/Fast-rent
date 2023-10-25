@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шапка сайта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #FFF;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .header .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .menu a {
+            text-decoration: none;
+            color: #000;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        .header .menu a:hover {
+            border-color: #000;
+        }
+
+        .banner {
+            position: relative;
+            height: 500px; 
+            background: url('path_to_your_image.jpg') no-repeat center center; 
+            background-size: cover;
+        }
+
+        .banner-content {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translateY(-50%);
+            color: #FFF;
+        }
+
+        .banner-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #FFD700;
+            padding: 15px 25px;
+            text-decoration: none;
+            color: #000;
+            display: inline-block;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Яндекс Еда</div>
+        <div class="menu">
+            <a href="#">Города</a>
+            <a href="#">Вопросы</a>
+            <a href="#">Стать курьером</a>
+            <a href="#">Принципы сотрудничества</a>
+            <a href="#">Свяжитесь с нами</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Ищем того, кто хочет зарабатывать до 100000 ₽ в месяц</h1>
+            <p>Быстрый выход на первую доставку и ежедневные выплаты</p>
+            <a href="#" class="button">Стать курьером</a>
+        </div>
+    </div>
+</body>
+</html>
